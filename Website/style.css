@@ -22,10 +22,11 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar-thumb {
-  background: #6649b8;
+  background: lightblue;
 }
 
-main {
+main,
+footer {
   margin-left: 5rem;
   padding: 1rem;
 }
@@ -117,4 +118,11 @@ main {
 }
 .navbar:hover .logo svg {
   transform: rotate(-180deg);
+}
+
+footer {
+  background: var(--bg-secondary);
+  color: black;
+  padding: 20px;
+  margin-top: 50px;
 }
