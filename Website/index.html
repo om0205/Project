@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <style>
     @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,400;1,800&display=swap");
+    @import url('https://fonts.googleapis.com/css2?family=Zen+Antique&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Display:ital,wght@1,300&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@300&display=swap');
 </style>
 <html lang="en">
  
@@ -8,15 +11,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stark Industries</title>
+    <title>Sairaaj Events</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+
+    <!-- NAVIGATION -->
     <nav class="navbar">
         <ul class="nav">
             <li class="logo">
                 <a href="#" class="nav-link">
-                    <span class="link-text">Stark</span>
+                    <span class="link-text">Sairaaj Events</span>
                     <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="dice-d20" class="svg-inline--fa fa-dice-d20" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M20.04 317.3C18 317.3 16 315.8 16 313.3V150.5c0-2.351 1.91-4.012 4.001-4.012c.6882 0 1.396 .18 2.062 .5748l76.62 45.1l-75.28 122.3C22.59 316.8 21.31 317.3 20.04 317.3zM231.4 405.2l-208.2-22.06c-4.27-.4821-7.123-4.117-7.123-7.995c0-1.401 .3725-2.834 1.185-4.161L122.7 215.1L231.4 405.2zM31.1 420.1c0-2.039 1.508-4.068 3.93-4.068c.1654 0 .3351 .0095 .5089 .0291l203.6 22.31v65.66C239.1 508.6 236.2 512 232 512c-1.113 0-2.255-.2387-3.363-.7565L34.25 423.6C32.69 422.8 31.1 421.4 31.1 420.1zM33.94 117.1c-1.289-.7641-1.938-2.088-1.938-3.417c0-1.281 .6019-2.567 1.813-3.364l150.8-98.59C185.1 10.98 187.3 10.64 188.6 10.64c4.32 0 8.003 3.721 8.003 8.022c0 1.379-.3788 2.818-1.237 4.214L115.5 165.8L33.94 117.1zM146.8 175.1l95.59-168.4C245.5 2.53 250.7 0 255.1 0s10.5 2.53 13.62 7.624l95.59 168.4H146.8zM356.4 207.1l-100.4 175.7L155.6 207.1H356.4zM476.1 415.1c2.422 0 3.93 2.029 3.93 4.068c0 1.378-.6893 2.761-2.252 3.524l-194.4 87.66c-1.103 .5092-2.241 .7443-3.35 .7443c-4.2 0-7.994-3.371-7.994-7.994v-65.69l203.6-22.28C475.7 416 475.9 415.1 476.1 415.1zM494.8 370.9C495.6 372.3 496 373.7 496 375.1c0 3.872-2.841 7.499-7.128 7.98l-208.2 22.06l108.6-190.1L494.8 370.9zM316.6 22.87c-.8581-1.395-1.237-2.834-1.237-4.214c0-4.301 3.683-8.022 8.003-8.022c1.308 0 2.675 .3411 4.015 1.11l150.8 98.59c1.211 .7973 1.813 2.076 1.813 3.353c0 1.325-.6488 2.649-1.938 3.429L396.5 165.8L316.6 22.87zM491.1 146.5c2.091 0 4.001 1.661 4.001 4.012v162.8c0 2.483-2.016 4.006-4.053 4.006c-1.27 0-2.549-.5919-3.353-1.912l-75.28-122.3l76.62-45.1C490.6 146.7 491.3 146.5 491.1 146.5z"></path></svg>
                 </a>
             </li>
@@ -27,25 +33,28 @@
                 </a>
             </li>
             <li class="nav-item">
-                <a href="#suits" class="nav-link">
+                <a href="#about" class="nav-link">
                     <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="address-card" class="svg-inline--fa fa-address-card" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M512 32H64C28.65 32 0 60.65 0 96v320c0 35.35 28.65 64 64 64h448c35.35 0 64-28.65 64-64V96C576 60.65 547.3 32 512 32zM176 128c35.35 0 64 28.65 64 64s-28.65 64-64 64s-64-28.65-64-64S140.7 128 176 128zM272 384h-192C71.16 384 64 376.8 64 368C64 323.8 99.82 288 144 288h64c44.18 0 80 35.82 80 80C288 376.8 280.8 384 272 384zM496 320h-128C359.2 320 352 312.8 352 304S359.2 288 368 288h128C504.8 288 512 295.2 512 304S504.8 320 496 320zM496 256h-128C359.2 256 352 248.8 352 240S359.2 224 368 224h128C504.8 224 512 231.2 512 240S504.8 256 496 256zM496 192h-128C359.2 192 352 184.8 352 176S359.2 160 368 160h128C504.8 160 512 167.2 512 176S504.8 192 496 192z"></path></svg>
                     <span class="link-text">About</span>
                 </a>
             </li>
             <li class="nav-item">
-                <a href="#" class="nav-link">
+                <a href="#display" class="nav-link">
                     <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="satellite-dish" class="svg-inline--fa fa-satellite-dish" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M216 104C202.8 104 192 114.8 192 128s10.75 24 24 24c79.41 0 144 64.59 144 144C360 309.3 370.8 320 384 320s24-10.75 24-24C408 190.1 321.9 104 216 104zM224 0C206.3 0 192 14.31 192 32s14.33 32 32 32c123.5 0 224 100.5 224 224c0 17.69 14.33 32 32 32s32-14.31 32-32C512 129.2 382.8 0 224 0zM188.9 346l27.37-27.37c2.625 .625 5.059 1.506 7.809 1.506c17.75 0 31.99-14.26 31.99-32c0-17.62-14.24-32.01-31.99-32.01c-17.62 0-31.99 14.38-31.99 32.01c0 2.875 .8099 5.25 1.56 7.875L166.2 323.4L49.37 206.5c-7.25-7.25-20.12-6-24.1 3c-41.75 77.88-29.88 176.7 35.75 242.4c65.62 65.62 164.6 77.5 242.4 35.75c9.125-5 10.38-17.75 3-25L188.9 346z"></path></svg>
                     <span class="link-text">Services</span>
                 </a>
             </li>
             <li class="nav-item">
-                <a href="#" class="nav-link">
+                <a href="#contact" class="nav-link">
                     <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="headset" class="svg-inline--fa fa-headset" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M191.1 224c0-17.72-14.34-32.04-32-32.04L144 192c-35.34 0-64 28.66-64 64.08v47.79C80 339.3 108.7 368 144 368H160c17.66 0 32-14.36 32-32.06L191.1 224zM256 0C112.9 0 4.583 119.1 .0208 256L0 296C0 309.3 10.75 320 23.1 320S48 309.3 48 296V256c0-114.7 93.34-207.8 208-207.8C370.7 48.2 464 141.3 464 256v144c0 22.09-17.91 40-40 40h-110.7C305 425.7 289.7 416 272 416H241.8c-23.21 0-44.5 15.69-48.87 38.49C187 485.2 210.4 512 239.1 512H272c17.72 0 33.03-9.711 41.34-24H424c48.6 0 88-39.4 88-88V256C507.4 119.1 399.1 0 256 0zM368 368c35.34 0 64-28.7 64-64.13V256.1C432 220.7 403.3 192 368 192l-16 0c-17.66 0-32 14.34-32 32.04L320 335.9C320 353.7 334.3 368 352 368H368z"></path></svg>
                     <span class="link-text">Contact</span>
                 </a>
             </li>
         </ul>
     </nav>
+
+
+    <!-- VIDEO -->
     <div class="video">
         <video autoplay loop muted>
             <source src="../Website/Background/bg.mp4" type="video/mp4">
@@ -53,79 +62,104 @@
     </div>
     <main>
         <section id="head1">
-            <h1>Stark Industries</h1>
+            <img src="../Website/Images/sairaaj print.png" alt="">
         </section>
-        <!-- <section id="mk42-container">
-            <h1>MK 42</h1>
-            <div id="mk42">
-                <div class="suit">
-                    <h1>Suit</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis dolorem beatae, qui expedita totam adipisci natus! Quis dolorem ullam adipisci, dolor et facere exercitationem mollitia aperiam velit placeat hic ea.</p>
-                </div>
-                <div class="suit">
-                    <h1>Suit</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis dolorem beatae, qui expedita totam adipisci natus! Quis dolorem ullam adipisci, dolor et facere exercitationem mollitia aperiam velit placeat hic ea.</p>
-                </div>
-                <div class="suit">
-                    <h1>Suit</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis dolorem beatae, qui expedita totam adipisci natus! Quis dolorem ullam adipisci, dolor et facere exercitationem mollitia aperiam velit placeat hic ea.</p>
-                </div>
 
+
+        <!-- ABOUT -->
+        <div id="about">
+            <h2>"UNPARALLELED, STRESS-FREE</h2>
+            <h1>EVENT PLANNING & DESIGN"</h1>
+            <div class="p1">
+                <p> The Sairaaj experience is unlike any other. Our full-service event planning and design team will guide you every step of the way, ensuring a stress-free experience from start to finish.</p>
             </div>
-        </section> -->
-        <div id="suits">
-            <div class="container">
-                <h1 class="d-title">Iron Man Suits</h1>
-                <p class="d-info">
-                    Lorem ipsum dolor sit amet consenter adipisicing elit. Fuga impedit tempore, sunt vel dolor eligendi! Odio, ad excepturi veniam earum nisi sed perspiciatis sit voluptatem.
-                </p>
-                <div class="all-suits">
-                    <div class="suit-data">
-                        <div class="suit-content">
-                            <div class="image">
-                                <h2>Mark 1</h2>
-                                <img src="../Website/Suits/Ch-200003885000.png" alt="">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit libero ipsum totam, soluta aspernatur nobis corporis fuga quam voluptatibus iusto ipsa provident nam vel animi facilis magnam. Vitae, veniam veritatis?</p>
-                            </div>
-                            <div class="image">
-                                <h2>Mark 2</h2>
-                                <img src="../Website/Suits/mk2.png" alt="">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis impedit quod totam deleniti corrupti libero illo dolorem qui sed corporis doloribus eum, amet, nostrum iste nam ad eaque tenetur natus.</p>
-                            </div>
-                            <div class="image">
-                                <h2>Mark 3</h2>
-                                <img src="../Website/Suits/mk3.png" alt="">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit libero aspernatur error! Fugit vel alias hic iste magni ad, blanditiis reiciendis neque explicabo, dicta laborum eligendi optio iusto impedit eum.</p>
-                            </div>
-                        </div>
-                        <div class="suit-content2">
-                            <div class="image">
-                                <h2>Mark 7</h2>
-                                <img src="../Website/Suits/mk7.png" alt="">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit libero ipsum totam, soluta aspernatur nobis corporis fuga quam voluptatibus iusto ipsa provident nam vel animi facilis magnam. Vitae, veniam veritatis?</p>
-                            </div>
-                            <div class="image">
-                                <h2>Hulkbuster</h2>
-                                <img src="../Website/Suits/hb.png" alt="">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis impedit quod totam deleniti corrupti libero illo dolorem qui sed corporis doloribus eum, amet, nostrum iste nam ad eaque tenetur natus.</p>
-                            </div>
-                            <div class="image">
-                                <h2>Mark 85</h2>
-                                <img src="../Website/Suits/mk85.png" alt="">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit libero aspernatur error! Fugit vel alias hic iste magni ad, blanditiis reiciendis neque explicabo, dicta laborum eligendi optio iusto impedit eum.</p>
-                            </div>
-                        </div>
+            <div class="p2">
+                <p>With us, customization is guaranteed. From the very beginning, we will create a custom proposal tailored to your specific wants and needs. You'll be paired with an Sairaaj Event Team who will collaborate with you to bring your vision to life. We will team up with some of the best vendors in Nagpur and take care of the all the details like meeting scheduling, delivery dates, payments, day-of setup, and more.</p>
+            </div>
+            <div class="p3">
+                <p>When it’s showtime, our staff will work tirelessly to guarantee your event is effortless and unforgettable.</p>
+            </div>
+            <button>FIND OUT MORE</button>
+        </div>
 
+
+        <!-- DISPLAY -->
+        <div id="display">
+                <h1 class="d-title">Our Services</h1>
+                        <div class="display-content">
+                            <div class="image">
+                                <h2>WEDDINGS</h2>
+                                <img src="../Website/Images/wedding.jpeg" alt="">
+                                <p>With every last detail taken care of, we're here to ensure the day you've always dreamed of will be the day you'll never forget</p>
+                            </div>
+                            <div class="image2">
+                                <h2>CORPORATE EVENTS</h2>
+                                <img src="../Website/Images/corporate.jpg" alt="">
+                                <p>Wow your guests with a unique corporate experience that aligns with your company's mission and elevates your brand.</p>
+                            </div>
+                            <div class="image">
+                                <h2>SOCIAL GATHERINGS</h2>
+                                <img src="../Website/Images/social.jpg" alt="">
+                                <p>
+                                    From a show stopping engagement celebration to an epic surprise birthday party, you dream it and we'll make it a reality.</p>
+                            </div>
+                        </div>  
+        </div>
+
+        <!-- CONTACT -->
+        <div id="contact">
+            <div class="c-content">
+                <div class="part1">
+                    <div class="address">
+                        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="location-dot" class="svg-inline--fa fa-location-dot" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path fill="currentColor" d="M192 0C85.97 0 0 85.97 0 192c0 77.41 26.97 99.03 172.3 309.7c9.531 13.77 29.91 13.77 39.44 0C357 291 384 269.4 384 192C384 85.97 298 0 192 0zM192 271.1c-44.13 0-80-35.88-80-80S147.9 111.1 192 111.1s80 35.88 80 80S236.1 271.1 192 271.1z"></path></svg>
+                        <div class="titl">Address</div>
+                        <div class="add">207, Rachana Tarangan, T-Point, Hingna Road, Nagpur - 440036</div>
+                    </div>
+                    <div class="phone">
+                        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="phone" class="svg-inline--fa fa-phone" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M511.2 387l-23.25 100.8c-3.266 14.25-15.79 24.22-30.46 24.22C205.2 512 0 306.8 0 54.5c0-14.66 9.969-27.2 24.22-30.45l100.8-23.25C139.7-2.602 154.7 5.018 160.8 18.92l46.52 108.5c5.438 12.78 1.77 27.67-8.98 36.45L144.5 207.1c33.98 69.22 90.26 125.5 159.5 159.5l44.08-53.8c8.688-10.78 23.69-14.51 36.47-8.975l108.5 46.51C506.1 357.2 514.6 372.4 511.2 387z"></path></svg>
+                        <div class="titl">Contact</div>
+                        <div class="add">9850 388008</div>
+                    </div>
+                    <div class="email">
+                        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="envelope" class="svg-inline--fa fa-envelope" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 352c-16.53 0-33.06-5.422-47.16-16.41L0 173.2V400C0 426.5 21.49 448 48 448h416c26.51 0 48-21.49 48-48V173.2l-208.8 162.5C289.1 346.6 272.5 352 256 352zM16.29 145.3l212.2 165.1c16.19 12.6 38.87 12.6 55.06 0l212.2-165.1C505.1 137.3 512 125 512 112C512 85.49 490.5 64 464 64h-416C21.49 64 0 85.49 0 112C0 125 6.01 137.3 16.29 145.3z"></path></svg>
+                        <div class="titl">E-Mail</div>
+                        <div class="add">rajpanchdhane@rediffmail.com</div>
                     </div>
                 </div>
+                <div class="part2">
+                    <div class="contact-us">Contact Us</div>
+                    <p>We love questions and feedback - and we're always happy to help!</p>
+                
+                    <form action="#">
+                        <div class="form-text">
+                            <input type="text" placeholder="Enter your Name">
+                        </div>
+                        <div class="form-text">
+                            <input type="text" placeholder="Enter your Email">
+                        </div>
+                        <div class="form-text">
+                            <textarea placeholder="Enter you message"></textarea>
+                        </div>
+                        <div class="form-button">
+                            <button>Submit</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="part3">
+                    <h2>Where to find us:</h2>
+                    <img src="../Website/Images/location.png" alt="">
+                </div>
             </div>
+
         </div>
     </main>
-    <!--<footer id="main-footer">
+
+    <!-- FOOTER -->
+    <footer id="main-footer">
         <div class="footer-text">
-            Website maintained by Tony and Pepper Copyright &copy; 2021 Stark Industries
+            Website maintained by Om Panchdhane &copy; 2021 Sairaaj Events
         </div>
     </footer>
--->
+
 </body>
 </html>
